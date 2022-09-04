@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin:0px;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+
+        }
+        body{
+            background-color: #eff6ff;
+        }
+        .container{
+            background-image: url(assets/gallary/home.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .container nav{
+            display: flex;
+            
+
+        }
+        nav ul{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: .5%;
+        }
+        nav ul li{
+            list-style-type: none;
+            margin: 0 10px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(109, 87, 186);
+            font-weight: 600;
+            cursor: pointer;
+        }
+        nav ul li a:hover{
+            text-shadow: 0 0 25px rgb(78, 30, 251);
+            
+            border-bottom: 2px solid rgb(94, 72, 172);
+            
+            
+        }
+        .logo{
+            
+            margin-left: 5%;
+            cursor: pointer;
+
+        }
+        .btn_login{
+            background-color: white;
+            width: 150px;
+            height: 30px;
+            margin-top: 18px;
+            margin-left: 8%;
+            border-radius: 35px;
+            border: 0px;
+            color: rgb(109, 86, 190);
+            cursor: pointer;
+            
+    
+        }
+        .btn_login:hover{
+        box-shadow: 0 0 25px rgb(78, 30, 251);
+        transition: .5s;
+            
+        }
+        .home{
+            display: flex;
+           padding-bottom: 80px;
+        }
+        .home_man{
+            width: 50%;
+            padding-right: 2%;
+        }
+        .heading{
+           color: rgb(38, 14, 124);
+           margin: 80px 0 0 15%;
+           line-height: 60px;
+           font-weight: 600;
+           font-size: 50px;
+           cursor: pointer;
+        
+        }
+        .pra{
+            color: rgb(73, 56, 134);
+            margin: 20px 0 0 15%;
+            font-size: small;
+            line-height: 25px;
+            white-space: 10px;
+            cursor: pointer;
+        }
+        .heading span{
+            color: rgb(109, 86, 190);
+            border-bottom: 4px solid rgb(109, 86, 190);
+            cursor: pointer;
+        }
+        .heading span:hover{
+            color: rgb(55, 0, 255);
+            border-bottom: 4px solid rgb(55, 0, 255);
+            
+        }
+
+        hr{
+           
+            width: 95%;
+            margin: 10px auto;
+            height: 2px;
+            border: 0px;
+            background-color: rgb(109, 86, 190);
+            
+            
+        }
+        .online{
+            font-size: small;
+            border: 0px;
+            background-color: rgb(109, 86, 190);
+            color: white;
+            border-radius: 35px;
+            padding: 10px 20px;
+            margin: 20px 0 0 15%;
+            cursor: pointer;
+            
+        }
+        .online:hover{
+            box-shadow: 0 0 15px rgb(255, 109, 109);
+        transition: .5s;
+        }
+        .online_chat{
+            font-size: small;
+            border: 0px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(109, 86, 190);
+            border-radius: 35px;
+            padding: 10px 35px;
+            margin: 20px 0 40px 5%;
+            cursor: pointer;
+            font-weight: 700;
+            
+        }
+       .online_chat:hover{
+        box-shadow: 0 0 15px rgb(78, 30, 251);
+        transition: .5s;
+       }
+       .know_head{
+      
+        text-align: center;
+        font-size: 25px;
+        color: rgb(38, 14, 124);
+        margin-top: 150px;
+       
+       }
+       .know_about{
+        text-align: center;
+        
+        padding: 10px;
+        margin: 50px auto;
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        
+       }
+       .know_about div{
+                background-color: rgb(255, 255, 255);
+                width: 20%;
+                text-align: center;
+                padding: 15px 10px;
+                border-radius: 6px;
+                cursor: pointer;
+       }
+       .know_about div:hover{
+               box-shadow: 0 0 10px rgb(40, 7, 255) ;
+               transition: .3s;
+       }
+       .know_about div h3{
+        color: rgb(27, 9, 93);
+        font-size: 20px;
+        margin: 10px 3px;
+        font-weight: 600;
+       }
+       .know_about div .pra_2{
+        font-size: x-small;
+        color: rgb(109, 86, 190);
+       }
+       .text_man{
+        padding-left: 10%;
+    }
+    .container_3{
+        display: flex;
+        margin-top: 100px;
+    }
+    .container_3 div{
+        width: 50%;
+    }
+    .text_man h3{
+       margin: 50px 0 20px 0px;
+       font-size: 35px;
+       color: rgb(27, 9, 93);
+       font-weight: 700;
+       cursor: pointer;
+    }
+    .text_man .pra_3{
+          color: rgb(109, 86, 190);
+          font-size: 15px;
+          line-height: 25px;
+          cursor: pointer;
+          margin-bottom: 20px;
+    }
+    .option{
+        display: flex;
+
+    }
+    .option div{
+       
+    }
+    form h4{
+        margin-top: 50px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+   
+    .container_4{
+        margin-top: 80px;
+    }
+    .chat_drimg{
+        width: 80%;
+        margin: auto;
+    }
+    .artical_man{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+      
+    }
+    .artical_img{
+        width: 30%;
+        border-radius: 7px;
+        overflow: hidden;
+        background-color: rgb(242, 242, 255);
+        padding-bottom: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 10px blue;
+        transition: .3s;
+
+    }
+    .artical_img:hover{
+        box-shadow: 0 0 20px blue;
+        transition: .3s;
+    }
+      h4{
+        color: rgb(46, 0, 213);
+        font-size: 15px;
+        margin-top: 15px;
+        line-height: 25px;
+        padding: 0 5px;
+
+      }
+      .pra_4{
+        font-size: 10px;
+        color: rgb(109, 86, 190);
+        line-height: 15px;
+        padding: 0 5px;
+
+      }
+      .Artical{
+        text-align: center;
+        font-size: 40px;
+        color: rgb(27, 9, 93);
+        font-weight: 600;
+        width: 80%;
+        margin: 10px auto 80px auto;
+    }
+    .Artical p{
+        margin-top: 10px;
+        font-size: 15px;
+        color: rgb(109, 86, 190);
+    }
+    .btn_man_2{
+        font-size: small;
+            border: 0px;
+            background-color: rgb(109, 86, 190);
+            color: white;
+            border-radius: 35px;
+            padding: 10px 30px;
+           
+            cursor: pointer;
+    }
+    .btn_man_2:hover{
+        box-shadow: 0 0 15px rgb(255, 109, 109);
+        transition: .5s;
+    }
+    .container5{
+        text-align: center;
+        width: 80%;
+        margin:60px auto;
+    }
+    .container7{
+        display: flex;
+        width: 80%;
+        margin:50px auto;
+        box-shadow: 0 0 10px blue;
+        cursor: pointer;
+    }
+    .container7:hover{
+        box-shadow: 0 0 20px rgb(0, 0, 244);
+        transition: .3s;
+    }
+    .Ques_man{
+        width: 50%;
+
+    }
+    .text_man2{
+        padding: 40px;
+    }
+    .text_man2 h3{
+        color: rgb(55, 0, 255);
+        margin:20px 0;
+    }
+    .text_man2 h3:hover{
+        text-shadow: 1px 0 3px rgb(138, 138, 255);
+    }
+    .text_man2 p{
+        color: rgb(109, 87, 186);
+        line-height: 20px;
+        text-align: justify;
+    }
+    .radio{
+     display: flex;
+     text-align: center;
+     margin: 20px 20px;
+
+    }
+    .media_btn button{
+        font-size: small;
+            border: 0px;
+            background-color: rgb(109, 86, 190);
+            color: white;
+            border-radius: 35px;
+            padding: 10px 40px;
+            margin: 10px;
+           
+            cursor: pointer;
+    }
+    .footer{
+        margin-top: 100px;
+        display: flex;
+        width: 100%;
+        background-image: url(assets/gallary/home.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+    .Docta{
+        width: 35%;
+        padding: 30px 30px;
+    }
+    .footer_details{
+        width: 65%;
+    }
+    .Docta .img_footer{
+        width: 15px;
+        
+    }
+    .Docta p{
+        margin-top: 20px;
+        font-size: x-small;
+        color: rgb(109, 86, 190);
+        line-height: 20px;
+    }
+    .Docta .footer_btn{
+        
+        width: 120px;
+        height: 45px;
+        background-color: rgb(109, 87, 186);
+        border: 0;
+        border-radius: 35px;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .Docta .footer_btn1{
+        
+        width: 120px;
+        height: 45px;
+        background-color: rgb(255, 255, 255);
+        border: 0;
+        border-radius: 35px;
+        color: rgb(16, 3, 69);
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .footer_details{
+        display: flex;
+        padding: 40px 30px;
+        justify-content: space-around;
+    }
+    .footer_details ul li{
+       list-style: none;
+       margin-bottom: 10px;
+    }
+    .footer_details ul li a{
+        text-decoration: none;
+        color: rgb(27, 9, 93);
+    }
+    .footer_details ul li a:hover{
+        color: blue;
+    }
+    .contect{
+        text-align: center;
+        color: rgb(16, 3, 69,.6);
+        background-color: rgb(255, 231, 221);
+        margin-top: 20px;
+        font-size: 25px;
+        padding: 5px 0;
+    }
+       @media only screen and (max-width: 600px){
+
+        .container nav{
+            display: flex;
+            flex-direction:column;
+       }
+       .logo{
+            
+            margin-left: 5%;
+            cursor: pointer;
+            width: 35px;
+            margin-top: 10px;
+       }
+       nav{
+        text-align: center;
+        background-color: rgb(221, 221, 255);
+       }
+       nav ul{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            text-align: center;
+       }
+       nav ul li{
+        margin-top: 10px;
+       }
+       .btn_login{
+            background-color: white;
+            width: 150px;
+            height: 30px;
+            margin: 25px auto;
+            border-radius: 35px;
+            border: 2px solid rgb(109, 86, 190);
+            color: rgb(109, 86, 190);
+            cursor: pointer;
+       }
+       .home{
+            display: flex;
+           padding-bottom: 80px;
+           flex-direction: column;
+       }
+       .home_man{
+            width: 100%;
+           
+       }
+       .heading{
+           color: rgb(38, 14, 124);
+           margin: 30px 0 0 5%;
+           line-height: 60px;
+           font-weight: 600;
+           font-size: 40px;
+           cursor: pointer;
+       }
+       .pra{
+            color: rgb(73, 56, 134);
+            margin: 20px 0 0 5%;
+            font-size: small;
+            line-height: 25px;
+            white-space: 10px;
+            cursor: pointer;
+        }
+        .online{
+            font-size: small;
+            border: 0px;
+            background-color: rgb(109, 86, 190);
+            color: white;
+            border-radius: 35px;
+            padding: 10px 20px;
+            margin: 20px 0 0 5%;
+            cursor: pointer;
+            
+        }
+        .online_chat{
+            font-size: small;
+            border: 2px solid rgb(109, 86, 190);
+            background-color: rgb(255, 255, 255);
+            color: rgb(109, 86, 190);
+            border-radius: 35px;
+            padding: 10px 35px;
+            margin: 20px 0 0 5%;
+            cursor: pointer;
+            font-weight: 700;
+            
+            
+        }
+        .container{
+              background-image: none;
+        
+        }
+        .know_head{
+      
+      text-align: center;
+      font-size: 15px;
+      color: rgb(38, 14, 124);
+      margin-top: 20px;
+        }
+        .know_about{
+        text-align: center;
+        
+        padding: 10px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: space-around;
+        
+       }
+       .know_about div{
+                background-color: rgb(255, 255, 255);
+                width: 90%;
+                margin: 20px auto ;
+                text-align: center;
+                padding: 15px 10px;
+                border-radius: 6px;
+                cursor: pointer;
+       }
+       .container_3{
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .container_3 div{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .text_man{
+        padding-left: 0%;
+    }
+    form h4{
+        margin-top: 50px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .Artical{
+        text-align: center;
+        font-size: 30px;
+        color: rgb(27, 9, 93);
+        font-weight: 600;
+        width: 90%;
+        margin: 10px auto 20px auto;
+    }
+    .Artical p{
+        margin-top: 10px;
+        font-size: 15px;
+        color: rgb(109, 86, 190);
+    }
+    .artical_man{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin:20px  auto;
+       
+    }
+    .artical_img{
+        width: 80%;
+        margin: 20px auto;
+        border-radius: 7px;
+        overflow: hidden;
+        background-color: rgba(81, 81, 255, 0.275);
+        padding-bottom: 20px;
+        cursor: pointer;
+        padding: 0 10px 10px 10px;
+    }
+    .container_4{
+        margin-top: 0px;
+    }
+    .btn_man_2{
+        font-size: small;
+            border: 0px;
+            background-color: rgb(109, 86, 190);
+            color: white;
+            border-radius: 35px;
+            padding: 10px 30px;
+           
+            cursor: pointer;
+    }
+    .container5{
+        text-align: center;
+        width: 80%;
+        margin:10px auto;
+    }
+    .container7{
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        margin:10px auto;
+    }
+    .Ques_man{
+        width: 90%;
+        margin:10px auto;
+
+    }
+    .text_man2{
+        padding: 10px;
+    }
+    .text_man2 h3{
+        color: rgb(27, 9, 93);
+        margin:20px 0;
+    }
+    .text_man2 p{
+        color: rgb(109, 87, 186);
+        line-height: 20px;
+        text-align: justify;
+    }
+    .footer{
+       
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+       
+    }
+    .Docta{
+        width: 80%;
+        margin: auto;
+        padding: 30px 0px;
+    }
+    .footer_details{
+        width: 65%;
+    }
+    .Docta .img_footer{
+        width: 15px;
+        
+    }
+    .Docta p{
+        margin-top: 20px;
+        font-size: x-small;
+        color: rgb(109, 86, 190);
+        line-height: 20px;
+    }
+    .Docta .footer_btn{
+        
+        width: 120px;
+        height: 45px;
+        background-color: rgb(109, 87, 186);
+        border: 0;
+        border-radius: 35px;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .Docta .footer_btn1{
+        
+        width: 120px;
+        height: 45px;
+        background-color: rgb(255, 255, 255);
+        border: 0;
+        border-radius: 35px;
+        color: rgb(16, 3, 69);
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .footer_details{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer_ul{
+     display: none;
+    }
+   
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+             
+                    <img class="logo" src="assets/gallary/logo.png" alt="">
+             
+             
+                <ul>
+                    <li class="home_active"><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Questions & Answers</a></li>
+                    <li><a href="#">Consulation</a></li>
+                    <li><a href="#footer">Articals</a></li>
+                </ul>
+             
+             
+                 <input class="btn_login" type="submit" value="Log in">
+             
+            </nav>
+        </header>
+        <hr>
+        <div class="home">
+                <div class="home_man">
+                        <h1 class="heading">Consult a doctor <br>
+                        anytime, anywhere <br>
+                        by <span>Video Call</span>   
+                        </h1>
+
+                        <p class="pra">
+                            Talk with a doctor using highly secoured HIPAA complaint <br>
+                            end-to-end encrypted video call.
+                        </p>
+                        <button class="online">Ask A Doctor Online</button>
+                        <button class="online_chat">Unlimited Chat</button>
+                </div>
+                <div class="home_man">
+                    <img style="width: 98%;"  src="assets/gallary/homedr2.png" alt="">
+                </div>
+        </div>
+    </div>
+    <div class="container_1">
+        <section>
+             <div class="know_head">
+                <h2>Why You Should trust us? <br>
+                    Get Know about us
+                </h2>
+             </div>
+             <div class="know_about">
+                <div>
+                     
+                        <img src="assets/gallary/drimg2.png" alt="">
+                     
+                     <h3> All Specialist</h3>
+                     <p class="pra_2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolorum, voluptates eligendi 
+                     </p>
+
+                </div>
+                <div>
+                    
+                       <img src="assets/gallary/lock-open-alt.png" alt="">
+                    
+                    <h3> Private & Safe</h3>
+                    <p class="pra_2">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolorum, voluptates eligendi 
+                    </p>
+
+               </div>
+               <div>
+                
+                   <img src="assets/gallary/family-man.png" alt="">
+               
+                <h3> Million Customber</h3>
+                <p class="pra_2">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolorum, voluptates eligendi 
+                </p>
+
+           </div>
+           <div>
+           
+               <img src="assets/gallary/chat.png" alt="">
+            
+            <h3> Chatbot Support</h3>
+            <p class="pra_2">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolorum, voluptates eligendi 
+            </p>
+
+       </div>
+             </div>
+        </section>
+    </div>
+    <div class="container_1 text_man">
+        <div class="chat_drimg">
+            <img style="width: 100%;" src="assets/gallary/chatdr.png" alt="">
+         </div>
+        <div class="container_3">
+            <div>
+                <h3>Start an online chat <br>
+                    Consulation with a doctor
+                </h3>
+                <p class="pra_3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.  Mollitia nam et cum, earum perferendis officia eaque minima tenetur quod,  hic culpa, delectus natus dolor ex? Delectus illum quos quaerat dicta.
+                </p>
+            </div>
+               <div>
+                <form action="">
+                    <h4>Talk with Doctor</h4>
+                    <div class="radio">
+                        <div class="media_btn">
+                            <button>Unity</button>
+                        </div>
+                        <div class="media_btn">
+                            <button>Phone</button>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <div class="media_btn">
+                            <button>Chat</button>
+                        </div>
+                        <div class="media_btn">
+                            <button>Video</button>
+                        </div>
+                    </div>
+                    
+                    
+                 
+                </form>
+               </div>
+            
+        </div>
+       
+    </div>
+    
+
+    <div class="container_4">
+        <div class="Artical">
+           Our Recent Articles
+         <p>Some Articles You can and take massage for your Future with some detailes</p>
+        </div>
+        <div class="artical_man">
+            <div class="artical_img">
+                <div><img style="width: 100%;" src="assets/gallary/img4.png" alt="" class="man1"></div>
+                <div class="detail">
+                    <h4> Covid -19 Verification with Certificate </h4>
+                    <p class="pra_4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus sunt dignissimos consectetur labore cumque doloremque quia ullam, repellendus assumenda neque fugit 
+                    </p>
+                </div>
+                
+            </div>
+            <div class="artical_img">
+                <div><img style="width: 100%;" src="assets/gallary/img9.png" alt="" class="man1"></div>
+                <div class="detail">
+                    <h4> Covid -19 Verification with Certificate </h4>
+                    <p class="pra_4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus sunt dignissimos consectetur labore cumque doloremque quia ullam, repellendus assumenda neque fugit 
+                    </p>
+                </div>
+                
+            </div>
+            <div class="artical_img">
+                <div><img style="width: 100%;" src="assets/gallary/img8.png" alt="" class="man1"></div>
+                <div class="detail">
+                    <h4> Covid -19 Verification with Certificate </h4>
+                    <p class="pra_4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus sunt dignissimos consectetur labore cumque doloremque quia ullam, repellendus assumenda neque fugit 
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container_4">
+       
+        <div class="artical_man">
+            <div class="artical_img">
+                <div><img style="width: 100%;" src="assets/gallary/img4.png" alt="" class="man1"></div>
+                <div class="detail">
+                    <h4> Covid -19 Verification with Certificate </h4>
+                    <p class="pra_4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus sunt dignissimos consectetur labore cumque doloremque quia ullam, repellendus assumenda neque fugit 
+                    </p>
+                </div>
+                
+            </div>
+            <div class="artical_img">
+                <div><img style="width: 100%;" src="assets/gallary/img9.png" alt="" class="man1"></div>
+                <div class="detail">
+                    <h4> Covid -19 Verification with Certificate </h4>
+                    <p class="pra_4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus sunt dignissimos consectetur labore cumque doloremque quia ullam, repellendus assumenda neque fugit 
+                    </p>
+                </div>
+                
+            </div>
+            <div class="artical_img">
+                <div><img style="width: 100%;" src="assets/gallary/img8.png" alt="" class="man1"></div>
+                <div class="detail">
+                    <h4> Covid -19 Verification with Certificate </h4>
+                    <p class="pra_4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea delectus sunt dignissimos consectetur labore cumque doloremque quia ullam, repellendus assumenda neque fugit 
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container5">
+        <button class="btn_man_2">Know More</button>
+    </div>
+    <div class="container6">
+        <div class="Artical">
+           Frequently Asked Questions
+          <p>Some Articles You can and take massage for your Future with some detailes
+            and take massage for your Future with some detailes
+          </p>
+         </div>
+         <div class="container7">
+            <div class="Ques_man">
+                <img class="ques_img" style="width:100%;" src="assets/gallary/footer2.png" alt="">
+            </div>
+            <div class="Ques_man text_man2">
+                <h3>What is your Questions</h3>
+                <p class="pra5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam quia inventore consequuntur, architecto beatae reiciendis laborum sapiente blanditiis quam, aut natus!
+                </p>
+                <h3>How can i help you?</h3>
+                <h3>What problem you are faceing evrytime evrywhere</h3>
+                <h3>Do you have some Questions you can ask.</h3>
+            </div>
+         </div>
+    </div>
+    <div class="container8">
+        <div class="sain_img">
+               
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="Docta">
+                  <div><img src="assets/gallary/logo.png" alt=""></div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam adipisci ad, tenetur.</p>
+                  <button class="footer_btn"> 
+                    <img  class="img_footer" src="assets/gallary/apple.png" alt=""> Apple.com
+                  </button>
+                  <button  class="footer_btn1"> 
+                    <img class="img_footer" src="assets/gallary/play.png" alt=""> PlayStore
+                  </button>
+                </div>
+                <div class="footer_details">
+                    <div class="footer_ul" id="footer">
+                        <ul>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_ul">
+                        <ul>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_ul">
+                        <ul>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_ul">
+                        <ul>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                            <li><a href="#">link_add </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <hr>
+    <div class="contect">
+       Surender Sain (Hansi.Hisar,Haryana)
+    </div>
+ 
+    
+</body>
+</html>
